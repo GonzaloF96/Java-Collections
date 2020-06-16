@@ -1,0 +1,22 @@
+ackage ej.hashset;
+
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class EjHashSet {
+
+    public static void main(String[] args) {
+    Set<String> nombre = new HashSet<>();
+    nombre.add("Mario");
+    nombre.add("Claudio");
+    nombre.add("Roberto");
+    nombre.add("Mario");
+    nombre.add(null);
+   
+    nombre.stream().forEach(e -> System.out.println(e));
+    //no permite repeticiones
+
+    }
+    
+}
